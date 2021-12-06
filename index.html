@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Friki´s</title>
+</head>
+<body>
+    <header class="container-header">
+        <div class="logo">Friki´s</div>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Producto</a></li>
+                <li><a href="">Compra</a></li>
+                <li><a href="">Información</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container-inicio">
+                <div>
+                    <div class="container-titulo">
+                        <h1>Friki´s</h1>
+                        <h2>Lo mejor del coleccionismo</h2>
+                    </div>
+                    <img class="fondo" src="img/fondo.png" alt="Fondo"> 
+                </div>
+        </section>
+        <section class="container-producto">
+            <h3>IRON MAN MARK LXXXV</h3>
+                <div class="columnas">
+                    <div class="producto">
+                        <img src="img/IronMan.jpg" alt="Producto">
+                        <div class="miniaturas">
+                            <img src="img/IronMan3.jpg" alt="">
+                            <img src="img/IronMan4.jpg" alt="">
+                            <img src="img/IronMan2.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="container-tabla">
+                        <table class="tabla">
+                            <thead>
+                                <tr>
+                                    <th>Nombre del Producto</th>
+                                    <th>Altura</th>
+                                    <th>Puntos de Articulación</th>
+                                    <th>Peso</th>
+                                    <th>Marca</th>
+                                    <th>Fabricante</th>
+                                    <th>Tipo</th>
+                                    <th>Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Iron man mark LXXXV</td>
+                                    <td>Aproximadamente 32,5 cm de altura</td>
+                                    <td>30</td>
+                                    <td>5,65 libras(2,6 kg)</td>
+                                    <td>Marvel</td>
+                                    <td>Hot Toys</td>
+                                    <td>Escala 1/6</td>
+                                    <td>$ 1.675.820,67</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </section>
+        <section class="container-compra">
+            <div class="container-formulario">
+                <h3>COMPRA</h3>
+                <form action="#">
+                    <div class="nombre">
+                        <div>
+                            <label>Nombre</label>
+                            <input type="text" name="nombre">
+                        </div>
+                        <div>
+                            <label>Apellido</label>
+                            <input type="text" name="apellido">
+                        </div>
+                    </div>
+                    <div class="direccion">
+                        <label >Dirección</label>
+                        <input type="text" name="direccion">
+                    </div>
+                    <div class="info-direccion">
+                        <div>
+                            <label>Ciudad</label>
+                            <input type="text" name="ciudad">
+                        </div>
+                        <div>
+                            <label>Barrio</label>
+                            <input type="text" name="barrio">
+                        </div>
+                        <div>
+                            <label>Codigo Postal</label>
+                            <input type="text" name="codPostal">
+                        </div>
+                    </div>
+                    <div class="num-Tarjeta">
+                        <label for="card-num">Numero de Tarjeta de Credito</label>
+                        <input type="text" name="num-tarjeta">
+                    </div>
+                    <div class="info-tarjeta">
+                        <div>
+                            <label>Exp</label>
+                            <input type="text" name="expira">
+                        </div>
+                        <div>
+                            <label>CCV</label>
+                            <input type="text" name="seguridad">
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button type="submit">Finalizar Compra</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="container-informacion">
+            <div class="columnas">
+                <div class="container-video">
+                    <h2>Proximo producto</h2>
+                    <div>
+                        <video src="video/ProximoProducto.mp4" controls></video>
+                    </div>
+                </div>
+                <div class="container-contacto">
+                    <h2>Contacto</h2>
+                    <form action="#">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" placeholder="Nombre"/>
+                        
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" placeholder="Apellido"/>
+                        
+                        <label for="email" >Email</label>
+                        <input type="email" name="email" placeholder="email" required />
+                        
+                        <label for="asunto">Asunto</label>
+                        <input type ="text" name="asunto"  placeholder="titular de la consulta"/>
+                        
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+                        <div class="btnContacto">
+                                <button>Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <H4>UNIVERSIDAD UNAD</H4>
+            <h5>© Derechos reservados; 2021</h5>
+            <h5>Daniel Felipe Antolinez Amador</h5>
+        </div>
+    </footer>
+</body>
+</html>

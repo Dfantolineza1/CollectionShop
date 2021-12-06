@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Montserrat:wght@500&display=swap');
+
+/* Normalizacción General */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(246, 223, 223);
+    width: 100%;
+    height: 300vh;
+}
+
+/* Sección del Header */
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3%;
+    background-color: rgb(236, 0, 0);
+
+}
+
+.main-nav{
+    height: 90px;
+}
+
+.logo{
+    color: #edf0f1;
+    line-height: 90px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-links{
+    list-style: none;
+    float: right;
+    line-height: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 20px;
+
+}
+
+.nav-links li a{
+    color: #edf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.3s linear 0s;
+}
+
+.nav-links li a:hover{
+    color: #f5c5c5;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #f5c5c5;
+}
+
+/* Sección del Main */
+
+.container-main{
+    width: 100%;
+    height: 96%;
+    
+}
+
+/* Sección 1 */
+
+.container-inicio{
+    margin: 1%;
+}
+
+.container-inicio div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    text-transform: uppercase;    
+}
+
+.fondo{
+    width: 99%;
+}
+
+.container-titulo{
+    position: relative;
+}
+
+/* Seccion 2 */
+
+.container-producto{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;    
+    margin-left: 50px;
+}
+.columnas{
+    margin-top: 40px;
+    columns: 2;
+}
+
+.producto{
+    text-align: left;
+}
+
+.producto img{
+    width: 100%;
+}
+
+.miniaturas img{
+    width: 32.3%;
+}
+.container-tabla{
+    width: 50%;
+    font-size: 0.9rem;
+    text-align: right;
+}
+.tabla{
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    border-collapse: collapse;  
+    margin-top: 15px;
+}
+tr:nth-of-type(odd) { 
+    background: #eee; 
+}
+th{
+    background: #333; 
+	color: white; 
+	font-weight: bold;
+}
+th, td{
+    padding: 6px; 
+		border: 1px solid #ccc; 
+		text-align: left;
+}
+
+/* Seccion 3 */
+
+.container-formulario {
+    width: 100%;
+    padding: 5% 10%;
+}
+
+.container-formulario h3 {
+    text-align: center;
+}
+
+.container-formulario form {
+    border: 2px;
+    background-color:rgb(252, 168, 168) ;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.container-formulario label{
+    letter-spacing: 5px;
+}
+.container-formulario input {
+    width: 100%;
+    min-height: 25px;
+    border: 0;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    margin-top: 5px;
+    color: maroon;
+    border-radius: 4px;
+}
+
+.container-formulario label {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: maroon;
+}
+
+.nombre {
+    justify-content: space-between;
+    display: flex;
+    width: 90%;
+    margin: 10px;
+}
+
+.direccion {
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px;
+}
+
+.nombre div {
+    width: 45%;
+}
+
+.info-direccion {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px;
+}
+
+.info-direccion div {
+    width: 30%;
+}
+
+.num-Tarjeta {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px;
+}
+
+.info-tarjeta {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px;
+}
+.info-tarjeta div{
+    width: 45%;
+}
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btns button {
+    margin: 10px 0;
+    height: 30px;
+    width: 40%;
+    color: #cfc9e1;
+    background-color: #4a3b76;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: .3rem;
+    letter-spacing: 2px;
+}
+
+.btns button:hover {
+    animation-name: btn-hov;
+    animation-duration: 550ms;
+    animation-fill-mode: forwards;
+}
+
+/* Seccion 4 */
+
+.container-contacto{
+    text-align: center;
+}
+
+.container-contacto form{
+	width:54%;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#f77676;
+}
+
+.container-contacto form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+.container-contacto form input[type="text"],form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+.container-contacto form button{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+.container-contacto form button:hover{
+	cursor:pointer;
+}
+
+.container-contacto textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+}
+
+.container-video {
+    text-align: center;
+}
+
+.container-video div video{
+    width: 80%;
+    margin-left: 50px;
+}
+
+/* Seccion del footer */
+
+footer{
+    text-align: center;
+    font-size: 1.6rem;
+}
